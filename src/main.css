@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+img{
+    max-width: 450px;
+
+}
+main{
+    background-color:#E0E0E0;
+}
+main .container {
+    display: flex;
+    text-align: center;
+}
+header{
+    display: flex;
+    padding: 50px;
+    background-color: #D35D3F;
+    border-bottom: solid 0.5em #f5ab98 ;
+    color: #ffffff;
+}
+header ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+header ul li{
+    padding: 5px;
+    font-size: 1.5em;
+    list-style-type: none ;
+    margin-right: 0.5em;
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main{
+    display: flex;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.container div{
+    margin-top: 4em;
+}
+
+.container div h2{
+    margin-bottom: 1.5em;
+}
+
+nav ul{
+    display: flex;
+}
+section{
+    background-color: #E0E0E0 ;
+}
+section h2{
+    text-align: center;
+    padding: 1em 0;
+    
+}
+h2 .produtos{
+    border-top: solid 2px #000;
+}
+.produtos   {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-top: solid 2px #000;
+    padding-top: 0.5em;
+    
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+}
+article{
+    text-align: center;
+}
+article button{
+    width: 90%;
+    height: 2em;
+    background: #D35D3F;
+    border: none;
+    cursor: pointer;
+
+}
+@media screen and (max-width : 767px) {
+    
+    img{
+        max-width: 350px;
+    
+    }
+    main .container {
+        display: block;
+        
+    }
+    header{
+        display: block;
+        padding: 50px;
+        background-color: #D35D3F;
+        border-bottom: solid 0.5em #f5ab98 ;
+        color: #ffffff;
+        
+    }
+    main{
+        display: block;
+    }
+    header .container{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .produtos   {
+        display: block;   
+    }
+    .produtos article{
+        margin-bottom: 32px
+    }
+    article button{
+        width: 60%;
+        height: 3.5em;
+        background: #D35D3F;
+        border-radius: 3%;    
+        margin-top: 16px;
+    }
+    article img, article h3{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width :768px) and (max-width : 1023px) {
+   .container {
+    max-width: 98%;
+   }
+   img{
+    max-width: 650px;
+
+    }
+   main .container {
+    display: block;
+    }
+    header{
+        display: block;
+        padding: 50px;
+        background-color: #D35D3F;
+        border-bottom: solid 0.5em #f5ab98 ;
+        color: #ffffff;
+    }
+    main{
+        display: block;
+    }
+    main div h2 {
+        font-size: 2em;
+    }
+    main div p{
+        font-size: 1.5em;
+        padding-bottom: 2em;
+    }
+    header .container{
+        display: flex;
+    }
+    .produtos   {
+        display: grid;
+        grid-template-columns: repeat(2 , 49%);
+        border-top: solid 2px #000;
+        padding-top: 0.5em;
+        
+    }
+    .produtos article{
+        margin-bottom: 32px
+    }
+}
